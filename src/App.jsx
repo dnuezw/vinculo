@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import spotifyIcon from './assets/images/spotifyIcon.png'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const linksToPages = [
+    {name: 'Home', link: './index.html'}, 
+    {name: 'Wiki/Lore', link: './Wiki/Lore.html'}, 
+    {name: 'Música', link: './Música.html'}, 
+    {name: 'Quiénes somos', link: './Quiénes somos.html'}, 
+    {name: 'Contacto', link: './Contacto.html'}
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <header>
+        {linksToPages.map(({link, name}) => 
+           <a href={link}>{name}</a>
+        )}
+      </header>
+      <main>
+        <h1>Vinculo the Game</h1>
+        <video src="../assets/videos/Son of Sun.mp4" width="60%" autoPlay muted loop />
+      </main>
+      <footer>
+        <a href="https://open.spotify.com/" target="_blank" className="myButton">
+          <span>Listen to us on Spotify</span>
+          <img src={spotifyIcon} className="icon" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </footer>
     </>
   )
 }
-
-export default App
