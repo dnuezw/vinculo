@@ -1,5 +1,6 @@
 import './App.css'
 import spotifyIcon from './assets/images/spotifyIcon.png'
+import trailer from './assets/videos/trailer.mp4';
 
 export default function App() {
   const linksToPages = [
@@ -11,7 +12,7 @@ export default function App() {
   ];
 
   return (
-    <>
+    <div className="content">
       <header>
         {linksToPages.map(({link, name}) => 
            <a href={link}>{name}</a>
@@ -19,7 +20,7 @@ export default function App() {
       </header>
       <main>
         <h1>Vinculo the Game</h1>
-        <video src="../assets/videos/Son of Sun.mp4" width="60%" autoPlay muted loop />
+        <video src={trailer} width="60%" autoPlay muted loop />
       </main>
       <footer>
         <a href="https://open.spotify.com/" target="_blank" className="myButton">
@@ -27,6 +28,6 @@ export default function App() {
           <img src={spotifyIcon} className="icon" />
         </a>
       </footer>
-    </>
+    </div>
   )
 }

@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 8px;
+    gap: 4px;
+}
+
+.selected {
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.myButton {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px;
+    align-items: center;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
