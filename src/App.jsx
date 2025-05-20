@@ -1,6 +1,6 @@
 import './App.css'
-import spotifyIcon from './assets/images/spotifyIcon.png'
-import Presentation from './components/Presentation/Presentation';
+import Presentation from './components/Presentation/Presentation'
+import Footer from './components/Footer/Footer'
 
 export default function App() {
   const linksToPages = [
@@ -21,12 +21,7 @@ export default function App() {
       <main>
         <Presentation />
       </main>
-      <footer>
-        <a href="https://open.spotify.com/" target="_blank" className="myButton">
-          <span>Listen to us on Spotify</span>
-          <img src={spotifyIcon} className="icon" />
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
