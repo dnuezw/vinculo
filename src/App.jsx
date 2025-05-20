@@ -1,6 +1,6 @@
 import './App.css'
 import spotifyIcon from './assets/images/spotifyIcon.png'
-import trailer from './assets/videos/trailer.mp4';
+import Presentation from './components/Presentation/Presentation';
 
 export default function App() {
   const linksToPages = [
@@ -19,8 +19,7 @@ export default function App() {
         )}
       </header>
       <main>
-        <h1>Vinculo the Game</h1>
-        <video src={trailer} width="60%" autoPlay muted loop />
+        <Presentation />
       </main>
       <footer>
         <a href="https://open.spotify.com/" target="_blank" className="myButton">
