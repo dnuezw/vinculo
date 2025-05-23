@@ -1,0 +1,39 @@
+.wikiEntries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: white;
+
+    :nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+.wikiArticle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 128px;
+
+    > div {
+        max-width: 700px;
+    }
+}
+
+.wikiArticleTitle {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.wikiArticleImg {
+    max-width: 420px;
+}
+
+.wikiArticleText{
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
