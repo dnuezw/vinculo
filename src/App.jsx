@@ -17,9 +17,12 @@ export default function App() {
     <div className="page">
       { /* <Header /> */ }
       <header>
-        {ROUTES_TO_PAGES.map(({name, route}) => 
-          <a onClick={() => handleClick(route)}>{name}</a>
-        )}
+        <p className="gameTitle">Vinculo The Game</p>
+        <div className="links">
+          {ROUTES_TO_PAGES.map(({name, route}) =>
+            <a onClick={() => handleClick(route)}>{name}</a>
+          )}
+        </div>
       </header>
       <main>
         {location === '/' ? <Presentation /> : <Wiki />}
