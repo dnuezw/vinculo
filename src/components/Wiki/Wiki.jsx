@@ -7,7 +7,7 @@ export default function Wiki() {
             <h1>Wiki / Lore</h1>
             <div className="wikiEntries">
             <article className="wikiArticle">
-                <img className="wikiArticleImg" src={fotoPrueba} />
+                <img loading='lazy' className="wikiArticleImg" src={fotoPrueba} />
                 <div>
                 <h2 className="wikiArticleTitle">Pibe con pistola</h2>
                 <p className="wikiArticleText">
@@ -16,7 +16,7 @@ export default function Wiki() {
                 </div>
             </article>
             <article className="wikiArticle">
-                <img className="wikiArticleImg" src={fotoPrueba} />
+                <img loading='lazy' className="wikiArticleImg" src={fotoPrueba} />
                 <div>
                 <h2 className="wikiArticleTitle">Pibe con pistola</h2>
                 <p className="wikiArticleText">
@@ -25,7 +25,7 @@ export default function Wiki() {
                 </div>
             </article>
             <article className="wikiArticle">
-                <img className="wikiArticleImg" src={fotoPrueba} />
+                <img loading='lazy' className="wikiArticleImg" src={fotoPrueba} />
                 <div>
                 <h2 className="wikiArticleTitle">Pibe con pistola</h2>
                 <p className="wikiArticleText">
@@ -34,7 +34,7 @@ export default function Wiki() {
                 </div>
             </article>
             <article className="wikiArticle">
-                <img className="wikiArticleImg" src={fotoPrueba} />
+                <img loading='lazy' className="wikiArticleImg" src={fotoPrueba} />
                 <div>
                 <h2 className="wikiArticleTitle">Pibe con pistola</h2>
                 <p className="wikiArticleText">
