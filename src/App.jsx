@@ -9,18 +9,14 @@ import { useState } from 'react'
 export default function App() {
   const [location, setLocation] = useState('/');
 
-  function handleClick(route) {
-    setLocation(route)
-  }
-
   return (
     <div className="page">
       { /* <Header /> */ }
       <header>
         <p className="gameTitle">Vinculo The Game</p>
         <div className="links">
-          {ROUTES_TO_PAGES.map(({name, route}) =>
-            <a onClick={() => handleClick(route)}>{name}</a>
+          {ROUTES_TO_PAGES.map((page) =>
+            <a onClick={() => setLocation(page.route)}>{page.name}</a>
           )}
         </div>
       </header>
