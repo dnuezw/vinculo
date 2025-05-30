@@ -8,6 +8,8 @@ import { useState } from 'react'
 import Music from './components/Music/Music'
 import AboutUs from './components/AboutUs/AboutUs'
 import Contact from './components/Contact/Contact'
+import logo from './assets/images/logo.png'
+import logoText from './assets/images/logoText.png'
 
 export default function App() {
   const [location, setLocation] = useState('/');
@@ -34,7 +36,8 @@ export default function App() {
     <div className="page">
       { /* <Header /> */ }
       <header>
-        <p className="gameTitle">Vinculo The Game</p>
+        <img className='logoImage' src={logo} />
+        <img className='logoText' src={logoText} />
         <div className="links">
           {ROUTES_TO_PAGES.map((page) =>
             <a onClick={() => setLocation(page.route)}>{page.name}</a>

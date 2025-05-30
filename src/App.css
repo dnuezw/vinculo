@@ -20,14 +20,17 @@ header {
     top: 0;
     backdrop-filter: blur(4px);
     color: white;
+    align-items: center;
+    gap: 8px;
 }
 
-.gameTitle {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'UnifrakturCook', sans-serif;
-    margin: 0;
+.logoImage {
+    width: 62px;
+    height: 62px;
+}
+
+.logoText {
+    height: 35px;
 }
 
 .links {
@@ -35,8 +38,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 4px;
     font-size: 24px;
+}
+
+.links > a {
+    padding: 0 8px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.links > a:hover {
+    color: #ff6934;
+    transition: color 0.3s ease;
 }
 
 footer {
